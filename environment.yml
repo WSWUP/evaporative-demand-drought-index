@@ -1,0 +1,11 @@
+name: eddi
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - python>=3.7
+  - numpy
+  - bottleneck
+  - scipy
+  - statsmodels  
