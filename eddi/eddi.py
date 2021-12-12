@@ -40,7 +40,7 @@ class EDDI(object):
 
 def eddi_1d(eto, ts):        
     """ 
-    Compute the Evaporative Demand Drought Index (EDDI) from monthly
+    Compute the Evaporative Demand Drought Index (EDDI) from daily
     reference evapotranspiration (eto). Step 1 is to compute the running
     sum of eto based on user defined time scale (ts). Step 2 is obtain the
     empirical probabilities from plotting positions. Step 3 is to transform
@@ -56,7 +56,7 @@ def eddi_1d(eto, ts):
     """
     print('calculating EDDI')
     
-    # Compute running soms based on time scale (ts)
+    # Compute running sums based on time scale (ts)
     acc = bn.move_sum(eto, ts)
     
     # Compute plotting positions to obtain daily CDF

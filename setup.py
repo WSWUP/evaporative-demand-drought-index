@@ -12,13 +12,15 @@ requires = [
     'numpy',
     'pandas',
     'scipy',
-    'statsmodels'
+    'statsmodels',
+    'refet'
+    
 ]
 
 tests_require = ['pytest']
 
 classifiers = [
-    'License :: OSI Approved :: BSD License',
+    'License :: OSI Approved :: Apache Software License',
     'Programming Language :: Python :: 3.7',
     'Environment :: Console',
     'Development Status :: 4 - Beta',
@@ -27,12 +29,12 @@ classifiers = [
 ]
 
 setup(
-    name='evaporative-demand-drought-index',
-    description='Interactive windrose diagrams using pandas and plotly',
+    name='eddi',
+    description='Tools for calculating evaporative demand drought index and similar indices',
     long_description=readme,
     author='Daniel McEvoy and John Volk',
     author_email='john.volk@dri.edu',
-    license='BSD3',
+    license='Apache',
     python_requires='>=3.7',
     version=version,
     url='https://github.com/WSWUP/evaporative-demand-drought-index',

@@ -3,9 +3,10 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - pandas
+  - pandas=0.25.1
   - python>=3.7
-  - numpy
+  - numpy=1.19.5
   - bottleneck
   - scipy
   - statsmodels  
+  - refet
